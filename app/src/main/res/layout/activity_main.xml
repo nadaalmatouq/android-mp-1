@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4E3E3"
+    android:foregroundTint="#FFFFFFFF"
+    android:paddingTop="20dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:text="Are you going "
+        android:textAlignment="center"
+        android:textColor="#3B6978"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="to pass?"
+        android:textAlignment="center"
+        android:textColor="#3B6978"
+        android:textSize="36sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="30dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Quizes"
+                android:textAlignment="center"
+                android:textColor="#3B6978"
+                android:textSize="24sp" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:paddingTop="15dp"
+                android:progress="50"
+                android:progressTint="#204051"
+                android:scrollbarSize="10dp"
+                android:thumbTint="#F6F6F5" />
+
+            <EditText
+                android:id="@+id/quizScr"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="score%15"
+                android:inputType="numberDecimal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:animateLayoutChanges="false"
+            android:orientation="horizontal"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Homework"
+                android:textAlignment="center"
+                android:textColor="#3B6978"
+                android:textSize="24sp" />
+
+            <SeekBar
+                android:id="@+id/seekBar3"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:paddingTop="15dp"
+                android:progress="50"
+                android:progressTint="#204051"
+                android:scrollbarSize="10dp"
+                android:thumbTint="#F6F6F5" />
+
+            <EditText
+                android:id="@+id/hwScr"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="score%25"
+                android:inputType="numberDecimal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Midterm"
+                android:textAlignment="center"
+                android:textColor="#3B6978"
+                android:textSize="24sp" />
+
+            <SeekBar
+                android:id="@+id/seekBar4"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:paddingTop="15dp"
+                android:progress="50"
+                android:progressTint="#204051"
+                android:scrollbarSize="10dp"
+                android:thumbTint="#F6F6F5" />
+
+            <EditText
+                android:id="@+id/midScr"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="score%30"
+                android:inputType="numberDecimal" />>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Final"
+                android:textAlignment="center"
+                android:textColor="#3B6978"
+                android:textSize="24sp" />
+
+            <SeekBar
+                android:id="@+id/seekBar2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:paddingTop="15dp"
+                android:progress="50"
+                android:progressTint="#204051"
+                android:scrollbarSize="10dp"
+                android:thumbTint="#F6F6F5" />
+
+            <EditText
+                android:id="@+id/finalScr"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="score%30"
+                android:inputType="numberDecimal"
+                android:textColorLink="#3F51B5" />>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="CALCULATE"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="20dp"
+        android:text="CURRENT GRADE"
+        android:textAlignment="center"
+        android:textColor="#3B6978"
+        android:textSize="18sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/grade"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+
+            android:text=""
+            android:textSize="150dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/percent"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:text=""
+            android:textSize="90dp"
+            android:textStyle="bold" />
+
+        <Button
+
+            android:id="@+id/rstbutton"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|left"
+            android:text="RESET"
+            android:textSize="18sp"
+            />
+
+    </FrameLayout>
+
+
+
+</LinearLayout>
